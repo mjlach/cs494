@@ -1,0 +1,19 @@
+/* Simple Greatest Common Denominator Program
+ * Prof. Kjell, Fa23
+ * Programmer: mjlach
+ */
+
+package cryptoSystems;
+
+public class GCD {
+	int a = 93;
+	int b = 93;
+
+	int gcd(int a, int b) {
+		if (b == 0) // gcd(a,0) == a
+			return a;
+		else
+			return gcd(b, a % b);
+	}
+
+}
